@@ -13,7 +13,6 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  
  */
- 
 body {
   background-color: #CCCCCC;
 }
@@ -2141,19 +2140,19 @@ legend {
 }
 .navbar.navbar-inverse {
   background-color: #3f51b5;
-  color: contrast-color(#3f51b5, #000000, #ffffff);
+  color: #ffffff;
 }
 .navbar.navbar-inverse .navbar-form .form-group input.form-control::-moz-placeholder,
 .navbar.navbar-inverse .navbar-form input.form-control::-moz-placeholder {
-  color: contrast-color(#3f51b5, #000000, #ffffff);
+  color: #ffffff;
 }
 .navbar.navbar-inverse .navbar-form .form-group input.form-control:-ms-input-placeholder,
 .navbar.navbar-inverse .navbar-form input.form-control:-ms-input-placeholder {
-  color: contrast-color(#3f51b5, #000000, #ffffff);
+  color: #ffffff;
 }
 .navbar.navbar-inverse .navbar-form .form-group input.form-control::-webkit-input-placeholder,
 .navbar.navbar-inverse .navbar-form input.form-control::-webkit-input-placeholder {
-  color: contrast-color(#3f51b5, #000000, #ffffff);
+  color: #ffffff;
 }
 .navbar.navbar-inverse .dropdown-menu {
   border-radius: 3px !important;
@@ -2164,10 +2163,10 @@ legend {
 }
 .navbar.navbar-inverse .dropdown-menu .active > a {
   background-color: #3f51b5;
-  color: contrast-color(#3f51b5, #000000, #ffffff);
+  color: #ffffff;
 }
 .navbar.navbar-inverse .dropdown-menu .active > a:hover, .navbar.navbar-inverse .dropdown-menu .active > a:focus {
-  color: contrast-color(#3f51b5, #000000, #ffffff);
+  color: #ffffff;
 }
 .navbar.navbar-primary {
   background-color: #9c27b0;
@@ -2469,10 +2468,10 @@ legend {
 }
 .alert.alert-inverse {
   background-color: #4558be;
-  color: contrast-color(#3f51b5, #000000, #ffffff);
+  color: #ffffff;
 }
 .alert.alert-inverse a, .alert.alert-inverse .alert-link {
-  color: contrast-color(#3f51b5, #000000, #ffffff);
+  color: #ffffff;
 }
 .alert.alert-primary {
   background-color: #a72abd;
@@ -3739,5 +3738,7 @@ h2.title {
     margin-right: 10px;
   }
 }
+
+
 
 /*# sourceMappingURL=material-kit.css.map */
