@@ -49,40 +49,6 @@
     background: radial-gradient(ellipse at center, $center-color 0%,$extern-color 100%); /* W3C */
     background-size: 550% 450%;
 }
-@mixin create-colored-badges(){
-    @mixin badges-color($color){
-        .tag{
-            background-color: $color;
-            color: $white-color;
-
-            .tagsinput-remove-link{
-                color: $white-color;
-            }
-        }
-        // .tagsinput-add{
-        //     color: $color;
-        // }
-    }
-
-    &.primary-badge{
-        @include badges-color($brand-primary);
-    }
-    &.info-badge {
-        @include badges-color($brand-info);
-    }
-    &.success-badge{
-        @include badges-color($brand-success);
-    }
-    &.warning-badge{
-        @include badges-color($brand-warning);
-    }
-    &.danger-badge{
-        @include badges-color($brand-danger);
-    }
-    &.rose-badge{
-      @include badges-color($brand-rose);
-    }
-}
 
 @mixin badge-color() {
     &.badge-primary{
