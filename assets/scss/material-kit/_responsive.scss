@@ -74,21 +74,29 @@
 
             .nav-item{
                 .nav-link{
-                   color: $black-color;
-                   margin: 5px 15px;
+                  color: $black-color;
+                  margin: 5px 15px;
+                }
+
+                &.active .nav-link,
+                &.active .nav-link:hover,
+                &.active .nav-link:focus,
+                &.active .nav-link:active{
+                  background-color: rgba(236, 237, 239, 1);
+                  color: $black-color;
                 }
 
                 &.button-container .nav-link{
-                    margin: 15px;
+                  margin: 15px;
                 }
 
                 &:after{
-                    width: calc(100% - 30px);
-                    content: "";
-                    display: block;
-                    height: 1px;
-                    margin-left: 15px;
-                    background-color: #e5e5e5;
+                  width: calc(100% - 30px);
+                  content: "";
+                  display: block;
+                  height: 1px;
+                  margin-left: 15px;
+                  background-color: #e5e5e5;
                 }
 
                 &:last-child {
@@ -332,6 +340,19 @@
       }
     }
   }
+
+  .login-page {
+    .page-header {
+      min-height: 100vh;
+      max-height: 1000px;
+      height: 100%;
+
+      > .container {
+        padding-top: 20vh;
+        padding-bottom: 200px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 400px){
@@ -351,6 +372,70 @@
   .card-profile {
     .card-header-image {
       max-height: 215px;
+    }
+  }
+}
+
+
+// Menu on LEFT
+
+@media screen and (max-width: 991px){
+  .menu-on-left{
+    .page-header,
+    .main,
+    .navbar > div {
+      @include transform-translate-x(0px);
+      transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    }
+
+    .navbar .collapse{
+        left: 0;
+        top: -25px;
+        right: auto;
+        @include transform-translate-x(-230px);
+    }
+
+    .navbar .navbar-translate{
+      .navbar-brand {
+        position: absolute;
+        right: 0;
+        top: -15px;
+      }
+    }
+  }
+
+  .nav-open {
+    .menu-on-left {
+      .page-header,
+      .main {
+        @include transform-translate-x(230px);
+      }
+
+      .navbar .collapse{
+        @include transform-translate-x(0px);
+      }
+
+      .navbar > div .navbar-translate {
+        @include transform-translate-x(230px);
+        transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+      }
+    }
+  }
+}
+
+@media (min-width: 575px) and (max-width: 991px){
+  .menu-on-left {
+    .navbar .collapse {
+      @include transform-translate-x(-255px);
+    }
+  }
+
+  .nav-open {
+    .menu-on-left {
+      .navbar .collapse {
+        @include transform-translate-x(-25px);
+        width: 245px;
+      }
     }
   }
 }

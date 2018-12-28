@@ -318,3 +318,10 @@
       }
     }
 }
+
+// some jss/css to make the cards look a bit better on Internet Explorer
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .card{
+    display: inline-block;
+  }
+}

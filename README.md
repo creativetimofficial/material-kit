@@ -1,7 +1,7 @@
 # [Material Kit](https://demos.creative-tim.com/material-kit/index.html) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Kit%20is%20a%20Free%20Bootstrap%204%20UI%20Kit%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//demos.creative-tim.com/material-kit/index.html%20%23bootstrap%20%23material%20%23design%20%23uikit%20%23freebie%20%20via%20%40CreativeTim)
 
 
- ![version](https://img.shields.io/badge/version-2.0.4-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+ ![version](https://img.shields.io/badge/version-2.0.5-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 
 ![Product Gif](https://s3.amazonaws.com/creativetim_bucket/github/gif/material-kit-free.gif)
@@ -33,12 +33,12 @@ Material Kit is based on the Github Repo from Fezvrasta who did an amazing job c
 
 ## Versions
 
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-kit)[<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-kit)[<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react)[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-kit)
 
 
-| HTML | React  |
-| --- | ---  |
-| [![Material Kit  HTML](https://s3.amazonaws.com/creativetim_bucket/products/38/thumb/opt_mk_thumbnail.jpg)](https://www.creative-tim.com/product/material-kit)  | [![Material Kit  React](https://s3.amazonaws.com/creativetim_bucket/products/83/thumb/opt_mk_react_thumbnail.jpg)](https://www.creative-tim.com/product/material-kit-react)   
+| HTML | React | Vue  |
+| --- | --- | ---  |
+| [![Material Kit  HTML](https://s3.amazonaws.com/creativetim_bucket/products/38/thumb/opt_mk_thumbnail.jpg)](https://www.creative-tim.com/product/material-kit)  | [![Material Kit  React](https://s3.amazonaws.com/creativetim_bucket/products/83/thumb/opt_mk_react_thumbnail.jpg)](https://www.creative-tim.com/product/material-kit-react)  | [![Vue Material Kit](https://s3.amazonaws.com/creativetim_bucket/products/97/thumb/opt_mk_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-kit)  
 
 
 
@@ -64,7 +64,7 @@ Material Kit is based on the Github Repo from Fezvrasta who did an amazing job c
 
 
 ## Documentation
-The documentation for the Material Kit is hosted at our [website](https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html).
+The documentation for the Material Kit is hosted at our [website](https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html).
 
 
 ## File Structure
@@ -122,7 +122,7 @@ At present, we officially aim to support the last two versions of the following 
 ## Resources
 - Demo: <https://demos.creative-tim.com/material-kit/index.html>
 - Download Page: <https://www.creative-tim.com/product/material-kit>
-- Documentation: <https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html>
+- Documentation: <https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/material-kit/issues)

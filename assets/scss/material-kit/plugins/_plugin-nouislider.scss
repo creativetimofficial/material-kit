@@ -75,16 +75,41 @@
  */
 .noUi-horizontal {
 	height: 2px;
-    margin: 15px 0;
+  margin: 15px 0;
+
+  .noUi-handle .noUi-tooltip {
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+
+  .noUi-pips {
+    .noUi-value {
+      position: absolute;
+      top: 10px;
+
+      &.noUi-value-large:last-of-type {
+        left: 95% !important;
+      }
+    }
+  }
 }
 .noUi-vertical {
-	width: 18px;
+  height: 100%;
+  width: 2px;
+  margin: 0 15px;
 }
 .noUi-vertical .noUi-handle {
-	width: 28px;
-	height: 34px;
-	left: -6px;
-	top: -17px;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  left: -6px;
+  top: -10px;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.2s ease-out;
+  border: 1px solid $brand-primary;
+  background: $white-color;
+  @include shadow-2dp();
 }
 
 /* Styling;

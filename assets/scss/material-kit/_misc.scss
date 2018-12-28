@@ -121,6 +121,18 @@ label{
 
     &:after {
       background: rgba(0, 0, 0, 0.5) !important;
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .container {
+      z-index: 3;
     }
   }
   .footer {
@@ -129,7 +141,7 @@ label{
     background: transparent;
     bottom: 0;
     color: $white-color;
-    z-index: 1;
+    z-index: 2;
 
     .copyright a{
       color: $white-color;
@@ -461,20 +473,6 @@ label{
   z-index: 3!important;
 }
 
-.bd-docs {
-  .navbar .navbar-nav-scroll {
-    .navbar-nav {
-      .nav-item:first-of-type {
-        .nav-link {
-          border: 1px solid;
-          padding: 10px;
-        }
-      }
-    }
-  }
-}
-
-
 @media all and (max-width: 375px) {
   .page-header {
     height: calc(100vh + 270px);
@@ -505,6 +503,48 @@ label{
   .form-group.is-focused {
     .bootstrap-datetimepicker-widget {
       left: -32px !important;
+    }
+  }
+}
+
+.show.modal .dropdown-toggle:after {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+// timepicker increase/decrease buttons
+
+.bootstrap-datetimepicker-widget .timepicker {
+  .table-condesed .btn{
+    .ripple-container {
+      width: 40px;
+      height: 40px;
+      margin: -11px 3px;
+    }
+  }
+}
+
+// docs
+
+ .bd-docs {
+  .bd-toc-item {
+    .bd-sidenav a span {
+      float: right;
+      margin-top: 5px;
+      padding: 3px 7px;
+      font-size: 8px;
+      line-height: 9px;
+      background-color: $brand-primary;
+    }
+  }
+
+  .bd-content .bd-title {
+    .btn {
+      padding: 7px 20px;
+      margin-bottom: 10px;
     }
   }
 }

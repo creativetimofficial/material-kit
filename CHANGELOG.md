@@ -1,5 +1,13 @@
 # Change Log
 
+## [2.0.5] 2018-11-23
+### Improvements, BugFixing
+- Changes for responsive devices
+- Improvements and BugFixing for documentation
+- Change versions on CSS and JS files
+- Pro Documentation integrated in Free Version
+- Eliminated extra CSS and JS
+
 ## [2.0.4] 2018-07-02
 ### BugFixing
 - Solved responsive issues
