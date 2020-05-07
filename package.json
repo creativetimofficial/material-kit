@@ -1,10 +1,11 @@
 {
-  "name": "material-kit",
+  "name": "@chase439/material-kit",
   "version": "2.0.7",
   "description": "Material Kit, a Google Material Desgin. Coded by Creative Tim",
   "main": "index.html",
   "directories": {
-    "example": "root"
+    "doc": "docs",
+    "example": "examples"
   },
   "scripts": {
     "open-app": "gulp open-app",
