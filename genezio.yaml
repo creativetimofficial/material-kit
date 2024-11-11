@@ -5,6 +5,11 @@ frontend:
         build: npm install
         deploy: npm install
     subdomain: flask-stock-pattern-recognition
+
+backend:
+    path: ./backend
+    entryFile: app.py
+
 name: flask-stock-pattern-recognition
 region: eu-central-1
 yamlVersion: 2
