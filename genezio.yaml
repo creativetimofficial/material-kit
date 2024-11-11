@@ -13,7 +13,7 @@ backend:
         name: python
         packageManager: pip
     functions:
-        name: hello-world-express-app-function
+      - name: hello-world-flask-app-function
         path: ./
         handler: app
         entry: app.py
