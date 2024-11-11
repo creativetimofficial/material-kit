@@ -7,8 +7,7 @@ frontend:
     subdomain: flask-stock-pattern-recognition
 
 backend:
-    path: ./backend
-    entryFile: app.py
+    path: ./
     language:
         name: python
         packageManager: pip
