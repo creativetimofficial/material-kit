@@ -11,6 +11,12 @@ backend:
     entryFile: app.py
     language:
         name: python
+        packageManager: pip
+    functions:
+        name: hello-world-express-app-function
+        path: ./
+        handler: app
+        entry: app.py
 
 name: flask-stock-pattern-recognition
 region: eu-central-1
