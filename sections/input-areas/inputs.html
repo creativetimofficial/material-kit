@@ -83,42 +83,65 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-lg-12 mx-auto">
-        <div class="mb-4 w-100 w-md-50 w-lg-25">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="https://demos.creative-tim.com/material-kit-pro/index">Input Areas</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Inputs</li>
-            </ol>
-          </nav>
-          <h3>Inputs</h3>
-        </div>
 
         <div class="container py-4">
           <div class="row">
             <div class="col-lg-7 mx-auto d-flex justify-content-center flex-column">
-              <h3 class="text-center">Contact us</h3>
+              <h3 class="text-center">Stock information to analyze</h3>
               <form action="/submit" role="form" id="contact-form" method="post" autocomplete="off">
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group input-group-dynamic mb-4">
-                        <label class="form-label">First Name</label>
-                        <input class="form-control" name="first_name" aria-label="First Name..." type="text" >
-                      </div>
-                    </div>
-                    <div class="col-md-6 ps-2">
-                      <div class="input-group input-group-dynamic">
-                        <label class="form-label">Last Name</label>
-                        <input type="text" class="form-control" placeholder="" name="last_name" aria-label="Last Name..." >
-                      </div>
+
+                  <div class="mb-4">
+                    <div class="input-group input-group-dynamic">
+                      <label for="gender">Ticker to choose</label>
+                        <select class="form-select mb-0" name="ticker" aria-label="Select ticker">
+                            <option selected>AAPL</option>
+                            <option value="1">AAPL</option>
+                            <option value="2">AMZN</option>
+                        </select>
                     </div>
                   </div>
                   <div class="mb-4">
                     <div class="input-group input-group-dynamic">
-                      <label class="form-label">Email Address</label>
-                      <input type="email" class="form-control" name="email">
+                      <label class="form-label">Select a ticker (if the ticker is invalid this will result in an error)</label>
+                      <input type="text" class="form-control" placeholder="" name="ticker" aria-label="Last Name..." optional>
                     </div>
                   </div>
+                  <div class="mb-4">
+                    <div class="input-group input-group-dynamic">
+                      <label class="form-label">Start Date</label>
+                      <input class="form-control" name="startdate" type="text" placeholder="dd/mm/yyyy" required>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="input-group input-group-dynamic">
+                      <label class="form-label">End Date</label>
+                      <input class="form-control" name="enddate" type="text" placeholder="dd/mm/yyyy" required>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="input-group input-group-dynamic">
+                      <label for="gender">Do you want candle types to appear?</label>
+                        <select class="form-select mb-0" name="candle_bool" aria-label="Candle types yes/no">
+                            <option selected>False</option>
+                            <option value="1">True</option>
+                            <option value="2">False</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="input-group input-group-dynamic">
+                      <label for="gender">Candle types</label>
+                        <select class="form-select mb-0" name="candle_types" aria-label="Candle types example">
+                            <option selected>o_marubozu</option>
+                            <option value="1">o_marubozu</option>
+                            <option value="2">doji</option>
+                        </select>
+                    </div>
+                  </div>
+
+
+
                   <div class="input-group mb-4 input-group-static">
                     <label>Your message</label>
                     <textarea name="message" class="form-control" id="message" rows="4"></textarea>
@@ -140,568 +163,11 @@
           </div>
         </div>
 
-
-
-        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
-          <div class="container border-bottom">
-            <div class="row justify-space-between py-2">
-              <div class="col-lg-3 me-auto">
-                <p class="lead text-dark pt-1 mb-0">Input flask</p>
-              </div>
-              <div class="col-lg-3">
-                <div class="nav-wrapper position-relative end-0">
-                  <ul class="nav nav-pills nav-fill flex-row p-1" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#preview-input-simple" role="tab" aria-selected="true">
-                        <i class="fas fa-desktop text-sm me-2"></i> Preview
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#code-input-simple" role="tab" aria-selected="false">
-                        <i class="fas fa-code text-sm me-2"></i> Code
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-content tab-space">
-            <div class="tab-pane active" id="preview-input-simple">
-              <iframe class="w-100 height-300" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
-        <section class="py-7">
-          <div class="container">
-            <div class="row justify-space-between py-2">
-                <div class="col-lg-4 mx-auto">
-                    <form action="/submit" method="POST"> <!-- Form submits to /submit -->
-                        <div class="input-group input-group-static mb-4">
-                            <label for="first_name">First Name</label>
-                            <input class="form-control" id="first_name" name="first_name" placeholder="eg. Thomas Shelby" type="text">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </div>
-          </div>
-        </section>
-
-        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
-        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
-        '></iframe>
-            </div>
-            <div class="tab-pane" id="code-input-simple">
-              <div class="position-relative p-4 pb-2">
-                <a class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3" onclick="copyCode(this);" href="javascript:;"><i class="fas fa-copy text-sm me-1"></i> Copy</a>
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-7"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between py-2"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-4 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-dynamic"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Regular<span class="nt">&lt;/label&gt;</span>
-          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/section&gt;</span></code></pre>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
-          <div class="container border-bottom">
-            <div class="row justify-space-between py-2">
-              <div class="col-lg-3 me-auto">
-                <p class="lead text-dark pt-1 mb-0">Input dynamic</p>
-              </div>
-              <div class="col-lg-3">
-                <div class="nav-wrapper position-relative end-0">
-                  <ul class="nav nav-pills nav-fill flex-row p-1" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#preview-input-simple" role="tab" aria-selected="true">
-                        <i class="fas fa-desktop text-sm me-2"></i> Preview
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#code-input-simple" role="tab" aria-selected="false">
-                        <i class="fas fa-code text-sm me-2"></i> Code
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-content tab-space">
-            <div class="tab-pane active" id="preview-input-simple">
-              <iframe class="w-100 height-300" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
-        <section class="py-7">
-  <div class="container">
-    <div class="row justify-space-between py-2">
-      <div class="col-lg-4 mx-auto">
-        <div class="input-group input-group-dynamic">
-          <label class="form-label">Regular</label>
-          <input type="text" class="form-control" >
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
-        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
-        '></iframe>
-            </div>
-            <div class="tab-pane" id="code-input-simple">
-              <div class="position-relative p-4 pb-2">
-                <a class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3" onclick="copyCode(this);" href="javascript:;"><i class="fas fa-copy text-sm me-1"></i> Copy</a>
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-7"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between py-2"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-4 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-dynamic"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Regular<span class="nt">&lt;/label&gt;</span>
-          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/section&gt;</span></code></pre>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
-          <div class="container border-bottom">
-            <div class="row justify-space-between py-2">
-              <div class="col-lg-3 me-auto">
-                <p class="lead text-dark pt-1 mb-0">Input static</p>
-              </div>
-              <div class="col-lg-3">
-                <div class="nav-wrapper position-relative end-0">
-                  <ul class="nav nav-pills nav-fill flex-row p-1" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#preview-input-icon-label" role="tab" aria-selected="true">
-                        <i class="fas fa-desktop text-sm me-2"></i> Preview
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#code-input-icon-label" role="tab" aria-selected="false">
-                        <i class="fas fa-code text-sm me-2"></i> Code
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-content tab-space">
-            <div class="tab-pane active" id="preview-input-icon-label">
-              <iframe class="w-100 height-300" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
-        <section class="py-7">
-  <div class="container">
-    <div class="row justify-space-between py-2">
-      <div class="col-lg-4 mx-auto">
-        <div class="input-group input-group-static mb-4">
-          <label>First Name</label>
-          <input class="form-control" placeholder="eg. Thomas Shelby" type="text" >
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
-        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
-        '></iframe>
-            </div>
-            <div class="tab-pane" id="code-input-icon-label">
-              <div class="position-relative p-4 pb-2">
-                <a class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3" onclick="copyCode(this);" href="javascript:;"><i class="fas fa-copy text-sm me-1"></i> Copy</a>
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-7"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between py-2"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-4 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-static mb-4"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;label&gt;</span>First Name<span class="nt">&lt;/label&gt;</span>
-          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"eg. Thomas Shelby"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/section&gt;</span></code></pre>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
-          <div class="container border-bottom">
-            <div class="row justify-space-between py-2">
-              <div class="col-lg-3 me-auto">
-                <p class="lead text-dark pt-1 mb-0">Input outline</p>
-              </div>
-              <div class="col-lg-3">
-                <div class="nav-wrapper position-relative end-0">
-                  <ul class="nav nav-pills nav-fill flex-row p-1" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#preview-input-outline" role="tab" aria-selected="true">
-                        <i class="fas fa-desktop text-sm me-2"></i> Preview
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#code-input-outline" role="tab" aria-selected="false">
-                        <i class="fas fa-code text-sm me-2"></i> Code
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-content tab-space">
-            <div class="tab-pane active" id="preview-input-outline">
-              <iframe class="w-100 height-300" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
-        <section class="py-7">
-  <div class="container">
-    <div class="row justify-space-between py-2">
-      <div class="col-lg-4 mx-auto">
-        <div class="input-group input-group-outline mb-4">
-          <label class="form-label">Outline</label>
-          <input class="form-control" type="text" >
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
-        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
-        '></iframe>
-            </div>
-            <div class="tab-pane" id="code-input-outline">
-              <div class="position-relative p-4 pb-2">
-                <a class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3" onclick="copyCode(this);" href="javascript:;"><i class="fas fa-copy text-sm me-1"></i> Copy</a>
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-7"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between py-2"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-4 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-outline mb-4"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Outline<span class="nt">&lt;/label&gt;</span>
-          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/section&gt;</span></code></pre>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
-          <div class="container border-bottom">
-            <div class="row justify-space-between py-2">
-              <div class="col-lg-3 me-auto">
-                <p class="lead text-dark pt-1 mb-0">Input with icon</p>
-              </div>
-              <div class="col-lg-3">
-                <div class="nav-wrapper position-relative end-0">
-                  <ul class="nav nav-pills nav-fill flex-row p-1" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#preview-input-icon" role="tab" aria-selected="true">
-                        <i class="fas fa-desktop text-sm me-2"></i> Preview
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#code-input-icon" role="tab" aria-selected="false">
-                        <i class="fas fa-code text-sm me-2"></i> Code
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-content tab-space">
-            <div class="tab-pane active" id="preview-input-icon">
-              <iframe class="w-100 height-300" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
-        <section class="py-7">
-  <div class="container">
-    <div class="row justify-space-between py-2">
-      <div class="col-lg-4 mx-auto">
-        <div class="input-group input-group-dynamic mb-4">
-          <span class="input-group-text"><i class="fas fa-search" aria-hidden="true"></i></span>
-          <input class="form-control" placeholder="Search" type="text" >
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
-        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
-        '></iframe>
-            </div>
-            <div class="tab-pane" id="code-input-icon">
-              <div class="position-relative p-4 pb-2">
-                <a class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3" onclick="copyCode(this);" href="javascript:;"><i class="fas fa-copy text-sm me-1"></i> Copy</a>
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-7"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between py-2"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-4 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-dynamic mb-4"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
-          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="nt">&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/section&gt;</span></code></pre>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
-          <div class="container border-bottom">
-            <div class="row justify-space-between py-2">
-              <div class="col-lg-3 me-auto">
-                <p class="lead text-dark pt-1 mb-0">Input success</p>
-              </div>
-              <div class="col-lg-3">
-                <div class="nav-wrapper position-relative end-0">
-                  <ul class="nav nav-pills nav-fill flex-row p-1" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#preview-input-success" role="tab" aria-selected="true">
-                        <i class="fas fa-desktop text-sm me-2"></i> Preview
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#code-input-success" role="tab" aria-selected="false">
-                        <i class="fas fa-code text-sm me-2"></i> Code
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-content tab-space">
-            <div class="tab-pane active" id="preview-input-success">
-              <iframe class="w-100 height-300" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
-        <section class="py-7">
-  <div class="container">
-    <div class="row justify-space-between py-2">
-      <div class="col-lg-4 mx-auto">
-        <input type="text" placeholder="Success" class="form-control is-valid" >
-      </div>
-    </div>
-  </div>
-</section>
-
-        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
-        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
-        '></iframe>
-            </div>
-            <div class="tab-pane" id="code-input-success">
-              <div class="position-relative p-4 pb-2">
-                <a class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3" onclick="copyCode(this);" href="javascript:;"><i class="fas fa-copy text-sm me-1"></i> Copy</a>
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-7"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between py-2"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-4 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Success"</span> <span class="na">class=</span><span class="s">"form-control is-valid"</span> <span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/section&gt;</span></code></pre>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
-          <div class="container border-bottom">
-            <div class="row justify-space-between py-2">
-              <div class="col-lg-3 me-auto">
-                <p class="lead text-dark pt-1 mb-0">Input error</p>
-              </div>
-              <div class="col-lg-3">
-                <div class="nav-wrapper position-relative end-0">
-                  <ul class="nav nav-pills nav-fill flex-row p-1" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#preview-input-error" role="tab" aria-selected="true">
-                        <i class="fas fa-desktop text-sm me-2"></i> Preview
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#code-input-error" role="tab" aria-selected="false">
-                        <i class="fas fa-code text-sm me-2"></i> Code
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-content tab-space">
-            <div class="tab-pane active" id="preview-input-error">
-              <iframe class="w-100 height-300" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
-        <section class="py-7">
-  <div class="container">
-    <div class="row justify-space-between py-2">
-      <div class="col-lg-4 mx-auto">
-        <input type="text" placeholder="Error" class="form-control is-invalid" >
-      </div>
-    </div>
-  </div>
-</section>
-
-        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
-        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
-        '></iframe>
-            </div>
-            <div class="tab-pane" id="code-input-error">
-              <div class="position-relative p-4 pb-2">
-                <a class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3" onclick="copyCode(this);" href="javascript:;"><i class="fas fa-copy text-sm me-1"></i> Copy</a>
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-7"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between py-2"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-4 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Error"</span> <span class="na">class=</span><span class="s">"form-control is-invalid"</span> <span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/section&gt;</span></code></pre>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
-          <div class="container border-bottom">
-            <div class="row justify-space-between py-2">
-              <div class="col-lg-3 me-auto">
-                <p class="lead text-dark pt-1 mb-0">Input disabled</p>
-              </div>
-              <div class="col-lg-3">
-                <div class="nav-wrapper position-relative end-0">
-                  <ul class="nav nav-pills nav-fill flex-row p-1" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#preview-input-disabled" role="tab" aria-selected="true">
-                        <i class="fas fa-desktop text-sm me-2"></i> Preview
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#code-input-disabled" role="tab" aria-selected="false">
-                        <i class="fas fa-code text-sm me-2"></i> Code
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-content tab-space">
-            <div class="tab-pane active" id="preview-input-disabled">
-              <iframe class="w-100 height-300" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-        <!-- Material Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-
-        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
-        <section class="py-7">
-  <div class="container">
-    <div class="row justify-space-between py-2">
-      <div class="col-lg-4 mx-auto">
-        <input type="text" placeholder="Disabled" class="form-control"  disabled>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
-        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
-        '></iframe>
-            </div>
-            <div class="tab-pane" id="code-input-disabled">
-              <div class="position-relative p-4 pb-2">
-                <a class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3" onclick="copyCode(this);" href="javascript:;"><i class="fas fa-copy text-sm me-1"></i> Copy</a>
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-7"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between py-2"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-4 mx-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Disabled"</span> <span class="na">class=</span><span class="s">"form-control"</span>  <span class="na">disabled</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/section&gt;</span></code></pre>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-  <footer class="footer py-5">
+  <!-- <footer class="footer py-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mb-4 mx-auto text-center">
@@ -753,17 +219,13 @@
       </div>
     </div>
   </footer>
-  <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-  <!--   Core JS Files   -->
   <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
   <script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../../assets/js/plugins/prism.min.js"></script>
   <script src="../../assets/js/plugins/highlight.min.js"></script>
-  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
-  <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
-  <script src="../../assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
+  <script src="../../assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script> -->
 </body>
 
 </html>
