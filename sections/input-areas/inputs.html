@@ -92,6 +92,83 @@
           </nav>
           <h3>Inputs</h3>
         </div>
+
+        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
+          <div class="container border-bottom">
+            <div class="row justify-space-between py-2">
+              <div class="col-lg-3 me-auto">
+                <p class="lead text-dark pt-1 mb-0">Input flask</p>
+              </div>
+              <div class="col-lg-3">
+                <div class="nav-wrapper position-relative end-0">
+                  <ul class="nav nav-pills nav-fill flex-row p-1" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#preview-input-simple" role="tab" aria-selected="true">
+                        <i class="fas fa-desktop text-sm me-2"></i> Preview
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#code-input-simple" role="tab" aria-selected="false">
+                        <i class="fas fa-code text-sm me-2"></i> Code
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content tab-space">
+            <div class="tab-pane active" id="preview-input-simple">
+              <iframe class="w-100 height-300" srcdoc='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link id="pagestyle" href="https://demos.creative-tim.com/material-kit/assets/css/material-kit.min.css?v=3.1.0" rel="stylesheet" />
+        <section class="py-7">
+          <div class="container">
+            <div class="row justify-space-between py-2">
+                <div class="col-lg-4 mx-auto">
+                    <form action="/submit" method="POST"> <!-- Form submits to /submit -->
+                        <div class="input-group input-group-static mb-4">
+                            <label for="first_name">First Name</label>
+                            <input class="form-control" id="first_name" name="first_name" placeholder="eg. Thomas Shelby" type="text">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
+        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://demos.creative-tim.com/material-kit/assets/js/material-kit.min.js?v=3.1.0" type="text/javascript"></script>
+        '></iframe>
+            </div>
+            <div class="tab-pane" id="code-input-simple">
+              <div class="position-relative p-4 pb-2">
+                <a class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3" onclick="copyCode(this);" href="javascript:;"><i class="fas fa-copy text-sm me-1"></i> Copy</a>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"py-7"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-space-between py-2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-4 mx-auto"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-dynamic"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Regular<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
         <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
           <div class="container border-bottom">
             <div class="row justify-space-between py-2">
@@ -162,6 +239,8 @@
             </div>
           </div>
         </div>
+
+
         <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
           <div class="container border-bottom">
             <div class="row justify-space-between py-2">
