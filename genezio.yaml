@@ -9,6 +9,7 @@ frontend:
 backend:
     path: ./backend
     entryFile: app.py
+    language: python
 
 name: flask-stock-pattern-recognition
 region: eu-central-1
